@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue List</title>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+    <li v-for="item in books">《{{item}}》</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      books: ["肖申克的救赎", "论语", "代码整洁之道", "道德经"]
+    }
+  });
+</script>
+</body>
+</html>

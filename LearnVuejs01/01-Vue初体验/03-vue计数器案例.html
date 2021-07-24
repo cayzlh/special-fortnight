@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-计数器</title>
+</head>
+<body>
+
+<div id="app">
+  <h1>当前计数：{{counter}}</h1>
+  <hr>
+<!--  <button v-on:click="counter&#45;&#45;"> - </button>-->
+<!--  <button v-on:click="counter++"> + </button>-->
+  <button v-on:click="subtraction"> - </button>
+  <button v-on:click="increment"> + </button>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      counter: 0
+    },
+    methods: {
+      // +
+      increment: function () {
+        // 要是用this关键字
+        this.counter++;
+        console.log("increment 方法被执行")
+      },
+      // -
+      subtraction: function () {
+        this.counter--;
+        console.log("subtraction 方法被执行")
+      }
+    }
+  });
+</script>
+</body>
+</html>
