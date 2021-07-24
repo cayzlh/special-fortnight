@@ -4,4 +4,4 @@
 > 开此专栏用于记录vuejs的学习过程
 
 
-![vuejs学习记录](https://www.cayzlh.com/wiki/vuejs/)
+[vuejs学习记录](https://www.cayzlh.com/wiki/vuejs/)
