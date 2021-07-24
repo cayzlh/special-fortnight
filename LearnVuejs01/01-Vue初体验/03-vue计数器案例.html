@@ -11,17 +11,20 @@
   <hr>
 <!--  <button v-on:click="counter&#45;&#45;"> - </button>-->
 <!--  <button v-on:click="counter++"> + </button>-->
-  <button v-on:click="subtraction"> - </button>
-  <button v-on:click="increment"> + </button>
+  <button @click="subtraction"> - </button>
+  <button @click="increment"> + </button>
 </div>
 
 <script src="../js/vue.js"></script>
 <script>
+  // 语法糖：简写
+  // proxy
+  const obj = {
+      counter: 0
+  }
   const app = new Vue({
     el: '#app',
-    data: {
-      counter: 0
-    },
+    data: obj,
     methods: {
       // +
       increment: function () {
